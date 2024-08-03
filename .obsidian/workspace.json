@@ -1,0 +1,192 @@
+{
+  "main": {
+    "id": "77b475dd4fe06242",
+    "type": "split",
+    "children": [
+      {
+        "id": "a3965714c34965a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "950b2bfb9949cfea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ce37c448dc8e2afd",
+    "type": "split",
+    "children": [
+      {
+        "id": "03102c204409c3c7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec848d11d3523c0f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9c0cd564eae2c86c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "87a8868b6521f7f6",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a1330f2d86f5edd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "4ebb9002dd6d2c84",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ae6a0f661e42159f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "33a32e3da67e7ae9",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a9cf1dab136b65af",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "ee7a3f96073a3ebb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "markdown-importer:Open format converter": false,
+      "publish:Publish changes...": false,
+      "workspaces:Manage workspace layouts": false
+    }
+  },
+  "active": "ec848d11d3523c0f",
+  "lastOpenFiles": [
+    "OSCP/4) Maintaining Access/Windows",
+    "OSCP/4) Maintaining Access/Windows/Lateral Movement",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Modification of Unprivileged Accounts.md",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Logon Triggered Persistence.md",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Abusing Services.md",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Backdooring the Login Screen & RDP.md",
+    "OSCP/Key_Terms/Helpful Persistence Mechanisms(Windows).md",
+    "'OSCP/4.md",
+    "'OSCP",
+    "UserInitMPRLogonScript.md",
+    "().md",
+    "OSCP/Key_Terms",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Backdooring Files.md",
+    "Challenges & CTFs/TryHackme/Injectics.md",
+    "MITRE Methodology-20240709210785.md",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Scheduled Tasks.md",
+    "Challenges & CTFs/TryHackme",
+    "Challenges & CTFs",
+    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence",
+    "OSCP/5) Covering Tracks",
+    "OSCP/4) Maintaining Access",
+    "OSCP/3) Exploitation",
+    "OSCP/2) Scanning & Enumeration",
+    "PTES/Exploitation/Develop Exploits/Test Exploits.md",
+    "PTES/Exploitation/Develop Exploits/Write Exploit Code.md",
+    "GIT Based Notes/Notes.md",
+    "PTES/Vulnerability Analysis/Manual Analysis/Validate Vulnerabilities.md",
+    "PTES/Vulnerability Analysis/Manual Analysis/Manual Testing.md",
+    "PTES/Vulnerability Analysis/Manual Analysis/Eliminate False Positives.md",
+    "PTES/Vulnerability Analysis/Documentation/Document Findings.md",
+    "PTES/Vulnerability Analysis/Documentation/Detailed Descriptions.md",
+    "PTES/Vulnerability Analysis/Automated Scanning/Select Tools.md",
+    "PTES/Vulnerability Analysis/Automated Scanning/Run Scans.md",
+    "PTES/Vulnerability Analysis/Automated Scanning/Analyze Results.md",
+    "PTES/Threat Modeling/Threat Identification/Threat Actors.md",
+    "Untitled.canvas"
+  ]
+}
