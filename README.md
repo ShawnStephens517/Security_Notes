@@ -11,7 +11,9 @@ Paths and notes in preperation for OSCP
 - PNPT Material
 
 ## PTES
-Notes for actually doing the Job
+
+Professional Notes for actually doing an engagement.
+
 - Recon
 - Pre-Engagement(SOW,ROE, ETC..)
 - Remediation

@@ -1,0 +1,10 @@
+{
+  "popup": true,
+  "rmDismiss": false,
+  "autoEmbedWhenEmpty": false,
+  "primary": "microlink",
+  "backup": "iframely",
+  "inPlace": false,
+  "debug": false,
+  "delay": 0
+}

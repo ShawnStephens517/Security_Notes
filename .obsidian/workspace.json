@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "a3965714c34965a7",
+        "id": "eef18ecf789ffdf9",
         "type": "tabs",
         "children": [
           {
-            "id": "950b2bfb9949cfea",
+            "id": "132e2a75916f0bea",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+                "file": "Challenges & CTFs/TryHackme/Blueprint.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+                "file": "Challenges & CTFs/TryHackme/Blueprint.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
+                "file": "Challenges & CTFs/TryHackme/Blueprint.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md"
+                "file": "Challenges & CTFs/TryHackme/Blueprint.md"
               }
             }
           }
@@ -149,44 +149,49 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ec848d11d3523c0f",
+  "active": "132e2a75916f0bea",
   "lastOpenFiles": [
-    "OSCP/4) Maintaining Access/Windows",
-    "OSCP/4) Maintaining Access/Windows/Lateral Movement",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Modification of Unprivileged Accounts.md",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Logon Triggered Persistence.md",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Abusing Services.md",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Persisting Through Existing Services.md",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Backdooring the Login Screen & RDP.md",
-    "OSCP/Key_Terms/Helpful Persistence Mechanisms(Windows).md",
-    "'OSCP/4.md",
-    "'OSCP",
-    "UserInitMPRLogonScript.md",
-    "().md",
-    "OSCP/Key_Terms",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Backdooring Files.md",
-    "Challenges & CTFs/TryHackme/Injectics.md",
+    "img_assets/Pasted image 20240809162924.png",
     "MITRE Methodology-20240709210785.md",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence/Scheduled Tasks.md",
-    "Challenges & CTFs/TryHackme",
-    "Challenges & CTFs",
-    "OSCP/4) Maintaining Access/Windows/Local Windows Persistence",
-    "OSCP/5) Covering Tracks",
-    "OSCP/4) Maintaining Access",
-    "OSCP/3) Exploitation",
-    "OSCP/2) Scanning & Enumeration",
+    "img_assets/Pasted image 20240809162933.png",
+    "img_assets",
     "PTES/Exploitation/Develop Exploits/Test Exploits.md",
-    "PTES/Exploitation/Develop Exploits/Write Exploit Code.md",
-    "GIT Based Notes/Notes.md",
-    "PTES/Vulnerability Analysis/Manual Analysis/Validate Vulnerabilities.md",
-    "PTES/Vulnerability Analysis/Manual Analysis/Manual Testing.md",
-    "PTES/Vulnerability Analysis/Manual Analysis/Eliminate False Positives.md",
-    "PTES/Vulnerability Analysis/Documentation/Document Findings.md",
-    "PTES/Vulnerability Analysis/Documentation/Detailed Descriptions.md",
-    "PTES/Vulnerability Analysis/Automated Scanning/Select Tools.md",
-    "PTES/Vulnerability Analysis/Automated Scanning/Run Scans.md",
-    "PTES/Vulnerability Analysis/Automated Scanning/Analyze Results.md",
-    "PTES/Threat Modeling/Threat Identification/Threat Actors.md",
+    "img_assets/Pasted image 20240809175042.png",
+    "README.md",
+    "Challenges & CTFs/TryHackme/Blueprint.md",
+    "Pasted image 20240809163007.png",
+    "Pasted image 20240809163013.png",
+    "Pasted image 20240809175314.png",
+    "Pentesting/Key_Terms/Helpful Persistence Mechanisms(Windows).md",
+    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Alternate Authentication Material.md",
+    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Lateral Movement with WMI.md",
+    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Spawn Remote Process.md",
+    "OSCP/4) Maintaining Access/Windows/Lateral Movement/Untitled.md",
+    "Challenges & CTFs/TryHackme/Injectics.md",
+    "Challenges & CTFs/TryHackme/LateralMovement and Pivot.md",
+    "Challenges & CTFs/TryHackme/Opacity.md",
+    "Tools/Security_Tools/MSFVenom.md",
+    "Tools/Security_Tools/Adversary Emulation/Mandiant Security Validator",
+    "Challenges & CTFs/TryHackme/NanoCherry.md",
+    "Challenges & CTFs/TryHackme/Anthem.md",
+    "Tools/Security_Tools/C2 Frameworks/Havoc - Cracked5pider.md",
+    "Tools/Security_Tools/C2 Frameworks/C24U - CyberScythe.md",
+    "Tools/Security_Tools/C2 Frameworks/Covenant(CSharp) - SpectreOps.md",
+    "Pentesting/4) Maintaining Access/Windows/Local Windows Persistence/Scheduled Tasks.md",
+    "Tools/Security_Tools/C2 Frameworks/Sandcat.go - MITRE.md",
+    "Tools/Security_Tools/C2 Frameworks/Mythic - SpectreOps.md",
+    "Tools/Security_Tools/C2 Frameworks/Sliver.md",
+    "Tools/Security_Tools/Adversary Emulation/Caldera",
+    "Tools/Security_Tools/Adversary Emulation",
+    "Tools/Security_Tools/C2 Frameworks",
+    "Pentesting/3) Exploitation/Web/SQL/In-Band SQLi/General.md",
+    "Pentesting/3) Exploitation/Web/XML External Entities(XXE)/In-Band XXE.md",
+    "Pentesting/3) Exploitation/Web/Cross-Site Scripting(XSS)/Blind",
+    "Pentesting/3) Exploitation/Web/Cross-Site Scripting(XSS)",
+    "Pentesting/3) Exploitation/Web/XML External Entities(XXE)/General.md",
+    "Pentesting/3) Exploitation/Web/XML External Entities(XXE)",
+    "Pentesting/3) Exploitation/Web",
+    "Pentesting/3) Exploitation/Web/SQL/In-Band SQLi",
     "Untitled.canvas"
   ]
 }
