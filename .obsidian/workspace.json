@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "eef18ecf789ffdf9",
+        "id": "4f14a6b9e1558454",
         "type": "tabs",
         "children": [
           {
-            "id": "132e2a75916f0bea",
+            "id": "0cdf1379042a600a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Blueprint.md",
+                "file": "Challenges & CTFs/HackTheBox/Usage.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Blueprint.md",
+                "file": "Challenges & CTFs/HackTheBox/Usage.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Blueprint.md",
+                "file": "Challenges & CTFs/HackTheBox/Usage.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,11 +125,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Blueprint.md"
+                "file": "Challenges & CTFs/HackTheBox/Usage.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -149,16 +150,34 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "132e2a75916f0bea",
+  "active": "0cdf1379042a600a",
   "lastOpenFiles": [
+    "Usage.pdf",
+    "Tools/Security_Tools/SQLMap.md",
+    "Challenges & CTFs/HackTheBox/Usage.md",
+    "Burp Request for SQLMap.md",
+    "email_sql.xml",
+    "Challenges & CTFs/HackTheBox/assets/requests/email_sql.xml",
+    "email_sql.md",
+    "Challenges & CTFs/HackTheBox/assets/requests/email_sql.md",
+    "Challenges & CTFs/HackTheBox/assets/requests/email_sql",
+    "Challenges & CTFs/HackTheBox/assets/email_sql",
+    "Challenges & CTFs/HackTheBox/assets/requests",
+    "Challenges & CTFs/HackTheBox/assets",
+    "Challenges & CTFs/HackTheBox/email_sql",
+    "Tools/Bash/Ping Sweeper.md",
+    "Untitled.canvas",
+    "Tools/Linux/Commands Cheat Sheet.md",
+    "Tools/Bash",
+    "Tools/Javascript",
+    "Tools/Golang",
+    "Challenges & CTFs/TryHackme/Blueprint.md",
     "img_assets/Pasted image 20240809162924.png",
     "MITRE Methodology-20240709210785.md",
     "img_assets/Pasted image 20240809162933.png",
-    "img_assets",
     "PTES/Exploitation/Develop Exploits/Test Exploits.md",
     "img_assets/Pasted image 20240809175042.png",
     "README.md",
-    "Challenges & CTFs/TryHackme/Blueprint.md",
     "Pasted image 20240809163007.png",
     "Pasted image 20240809163013.png",
     "Pasted image 20240809175314.png",
@@ -171,27 +190,10 @@
     "Challenges & CTFs/TryHackme/LateralMovement and Pivot.md",
     "Challenges & CTFs/TryHackme/Opacity.md",
     "Tools/Security_Tools/MSFVenom.md",
-    "Tools/Security_Tools/Adversary Emulation/Mandiant Security Validator",
     "Challenges & CTFs/TryHackme/NanoCherry.md",
     "Challenges & CTFs/TryHackme/Anthem.md",
     "Tools/Security_Tools/C2 Frameworks/Havoc - Cracked5pider.md",
     "Tools/Security_Tools/C2 Frameworks/C24U - CyberScythe.md",
-    "Tools/Security_Tools/C2 Frameworks/Covenant(CSharp) - SpectreOps.md",
-    "Pentesting/4) Maintaining Access/Windows/Local Windows Persistence/Scheduled Tasks.md",
-    "Tools/Security_Tools/C2 Frameworks/Sandcat.go - MITRE.md",
-    "Tools/Security_Tools/C2 Frameworks/Mythic - SpectreOps.md",
-    "Tools/Security_Tools/C2 Frameworks/Sliver.md",
-    "Tools/Security_Tools/Adversary Emulation/Caldera",
-    "Tools/Security_Tools/Adversary Emulation",
-    "Tools/Security_Tools/C2 Frameworks",
-    "Pentesting/3) Exploitation/Web/SQL/In-Band SQLi/General.md",
-    "Pentesting/3) Exploitation/Web/XML External Entities(XXE)/In-Band XXE.md",
-    "Pentesting/3) Exploitation/Web/Cross-Site Scripting(XSS)/Blind",
-    "Pentesting/3) Exploitation/Web/Cross-Site Scripting(XSS)",
-    "Pentesting/3) Exploitation/Web/XML External Entities(XXE)/General.md",
-    "Pentesting/3) Exploitation/Web/XML External Entities(XXE)",
-    "Pentesting/3) Exploitation/Web",
-    "Pentesting/3) Exploitation/Web/SQL/In-Band SQLi",
-    "Untitled.canvas"
+    "Tools/Security_Tools/C2 Frameworks/Covenant(CSharp) - SpectreOps.md"
   ]
 }
