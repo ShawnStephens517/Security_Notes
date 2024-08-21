@@ -13,7 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Injectics.md",
+                "file": "Tools/Security_Tools/Tshark & Wireshark.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "42f65172d13a3bd0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Linux/Commands Cheat Sheet.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Injectics.md",
+                "file": "Tools/Security_Tools/Tshark & Wireshark.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Injectics.md",
+                "file": "Tools/Security_Tools/Tshark & Wireshark.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Challenges & CTFs/TryHackme/Injectics.md"
+                "file": "Tools/Security_Tools/Tshark & Wireshark.md"
               }
             }
           }
@@ -152,10 +164,11 @@
   },
   "active": "0cdf1379042a600a",
   "lastOpenFiles": [
-    "Tools/Security_Tools/Shells & RevShells.md",
-    "Challenges & CTFs/TryHackme/Injectics.md",
-    "Tools/Python/SMB2_3 PCAP Decoder (smb2_3chopper.py).md",
     "Tools/Linux/Commands Cheat Sheet.md",
+    "Tools/Security_Tools/Tshark & Wireshark.md",
+    "Challenges & CTFs/TryHackme/Injectics.md",
+    "Tools/Security_Tools/Shells & RevShells.md",
+    "Tools/Python/SMB2_3 PCAP Decoder (smb2_3chopper.py).md",
     "Templates/Report-Writing/OSCP-exam-report-template_OS_v2.md",
     "Templates/Report-Writing/OSCP Report.md",
     "Templates/Report-Writing/Engagement.md",
@@ -193,7 +206,6 @@
     "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Alternate Authentication Material.md",
     "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Lateral Movement with WMI.md",
     "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Spawn Remote Process.md",
-    "OSCP/4) Maintaining Access/Windows/Lateral Movement/Untitled.md",
-    "Challenges & CTFs/TryHackme/LateralMovement and Pivot.md"
+    "OSCP/4) Maintaining Access/Windows/Lateral Movement/Untitled.md"
   ]
 }
