@@ -8,7 +8,7 @@ Walthrough and Note taking for different platform's challenges.
 Paths and notes in preperation for OSCP
 - CPTS
 - TryHackME
-- PNPT Material
+- PNPT Notes
 
 ## PTES
 

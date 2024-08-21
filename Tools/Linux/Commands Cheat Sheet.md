@@ -28,3 +28,10 @@ python -m http.server [port] - defaults 8000
 ```bash
 cat file.txt | grep "Item" | cut -d " " -f {item} | tr -d ":"
 ```
+
+```bash
+find . -name "*string*" -print
+
+find . -maxdepth 1 -name "*string*" -print`find . -maxdepth 1 -name "*string*" -print
+```
+

