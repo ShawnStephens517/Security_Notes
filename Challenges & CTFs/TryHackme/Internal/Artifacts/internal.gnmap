@@ -1,0 +1,4 @@
+# Nmap 7.94SVN scan initiated Tue Sep  3 05:24:27 2024 as: nmap -A -p 22,80 -oA internal 10.10.227.173
+Host: 10.10.227.173 (internal.thm)	Status: Up
+Host: 10.10.227.173 (internal.thm)	Ports: 22/open/tcp//ssh//OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.29 ((Ubuntu))/
+# Nmap done at Tue Sep  3 05:24:35 2024 -- 1 IP address (1 host up) scanned in 8.03 seconds
