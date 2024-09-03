@@ -88,4 +88,4 @@ Nmap done: 1 IP address (1 host up) scanned in 0.15 seconds
 ```
 
 ### Burp Request for [[SQLMap]]
-![[email_sql.xml]]
+![[Challenges & CTFs/HackTheBox/Usage/artifacts/email_sql.xml]]

@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Security_Tools/Tshark & Wireshark.md",
+                "file": "Challenges & CTFs/TryHackme/Overpass.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "42f65172d13a3bd0",
+            "id": "8c422c64d4f068fb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Linux/Commands Cheat Sheet.md",
+                "file": "Challenges & CTFs/TryHackme/Internal/Running Notes.md",
                 "mode": "source",
                 "source": false
               }
@@ -60,7 +60,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#stable_shell",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -97,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Tools/Security_Tools/Tshark & Wireshark.md",
+                "file": "Challenges & CTFs/TryHackme/Overpass.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Tools/Security_Tools/Tshark & Wireshark.md",
+                "file": "Challenges & CTFs/TryHackme/Overpass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,12 +137,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Tools/Security_Tools/Tshark & Wireshark.md"
+                "file": "Challenges & CTFs/TryHackme/Overpass.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -164,48 +164,48 @@
   },
   "active": "0cdf1379042a600a",
   "lastOpenFiles": [
+    "Challenges & CTFs/TryHackme/Daily Bugle.md",
+    "Challenges & CTFs/TryHackme/Overpass.md",
+    "Challenges & CTFs/TryHackme/Internal/Report_Draft.md",
+    "Challenges & CTFs/TryHackme/Untitled",
+    "Challenges & CTFs/TryHackme/Internal/Running Notes.md",
+    "Running.md",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request.txt",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request",
+    "Challenges & CTFs/TryHackme/Internal/linpeas.sh",
     "Tools/Linux/Commands Cheat Sheet.md",
-    "Tools/Security_Tools/Tshark & Wireshark.md",
-    "Challenges & CTFs/TryHackme/Injectics.md",
     "Tools/Security_Tools/Shells & RevShells.md",
-    "Tools/Python/SMB2_3 PCAP Decoder (smb2_3chopper.py).md",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/pass_brute.txt",
+    "Tools/Security_Tools/Hydra.md",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/log_request.txt",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan_e.txt",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan.txt",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan_contents.txt",
+    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan_includes.txt",
     "Templates/Report-Writing/OSCP-exam-report-template_OS_v2.md",
-    "Templates/Report-Writing/OSCP Report.md",
     "Templates/Report-Writing/Engagement.md",
-    "Challenges & CTFs/HackTheBox/Usage/Usage-Notes.md",
-    "Challenges & CTFs/TryHackme/Opacity.md",
-    "Challenges & CTFs/HackTheBox/Usage/artifacts/Usage.pdf",
-    "Templates/Code-Blocks/Python.md",
-    "Templates/Code-Blocks",
-    "Templates/Report-Writing",
-    "Templates",
-    "Tools/Report-Writing/Untitled.md",
-    "Tools/Report-Writing",
-    "README.md",
-    "Challenges & CTFs/HackTheBox/Usage",
-    "Tools/Security_Tools/SQLMap.md",
-    "Burp Request for SQLMap.md",
-    "email_sql.xml",
-    "Challenges & CTFs/HackTheBox/Usage/artifacts/requests/email_sql.xml",
-    "email_sql.md",
-    "Challenges & CTFs/HackTheBox/assets/requests/email_sql.md",
-    "Challenges & CTFs/HackTheBox/assets/requests/email_sql",
-    "Challenges & CTFs/HackTheBox/assets/email_sql",
-    "Tools/Bash/Ping Sweeper.md",
-    "Untitled.canvas",
-    "Challenges & CTFs/TryHackme/Blueprint.md",
+    "Templates/Report-Writing/OSCP Report.md",
     "img_assets/Pasted image 20240809162924.png",
-    "MITRE Methodology-20240709210785.md",
-    "img_assets/Pasted image 20240809162933.png",
-    "PTES/Exploitation/Develop Exploits/Test Exploits.md",
     "img_assets/Pasted image 20240809175042.png",
+    "img_assets/Pasted image 20240809162933.png",
+    "Tools/Golang/Pin-alyzer.md",
+    "Tools/Golang/IP_List_Gen.md",
+    "Tools/Bash/Ping Sweeper.md",
+    "Challenges & CTFs/TryHackme/Blueprint.md",
+    "Challenges & CTFs/TryHackme/Anthem.md",
+    "Challenges & CTFs/TryHackme/Opacity.md",
+    "Challenges & CTFs/TryHackme/NanoCherry.md",
+    "Challenges & CTFs/TryHackme/Injectics.md",
+    "Challenges & CTFs/TryHackme/Hammer.md",
+    "Tools/Python/Pin-alyzer.md",
+    "Tools/Rust/IP_List_Gen.md",
+    "Tools/Python/IP_List_Gen.md",
+    "Tools/Security_Tools/ffuf - Web Fuzzer.md",
+    "Challenges & CTFs/TryHackme/Retro.md",
+    "Tools/Security_Tools/Kerberoast.md",
+    "Untitled.canvas",
     "Pasted image 20240809163007.png",
     "Pasted image 20240809163013.png",
-    "Pasted image 20240809175314.png",
-    "Pentesting/Key_Terms/Helpful Persistence Mechanisms(Windows).md",
-    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Alternate Authentication Material.md",
-    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Lateral Movement with WMI.md",
-    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Spawn Remote Process.md",
-    "OSCP/4) Maintaining Access/Windows/Lateral Movement/Untitled.md"
+    "Pasted image 20240809175314.png"
   ]
 }

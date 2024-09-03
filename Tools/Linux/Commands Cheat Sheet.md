@@ -52,3 +52,25 @@ sha256sum extracted_file.raw
 sha1sum extracted.raw
 md5sum extracted.raw
 ```
+
+
+### Upgrade Rev Shell
+#stable_shell
+```bash
+script /dev/null -c bash - can be used inplace of python
+
+# In reverse shell
+$ python -c 'import pty; pty.spawn("/bin/bash")'
+Ctrl-Z
+
+# In Kali
+$ stty raw -echo
+$ fg
+
+# In reverse shell
+$ reset
+$ export SHELL=bash
+$ export TERM=xterm-256color
+$ stty rows <num> columns <cols>
+
+```
