@@ -1,4 +1,5 @@
-/*
+```go
+
 package main
 
 import (
@@ -71,4 +72,5 @@ func main() {
     }
     fmt.Printf("WaitForSingleObject returned: %d\n", s)
 }
-*/
+
+```
