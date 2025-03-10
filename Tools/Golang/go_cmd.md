@@ -55,3 +55,51 @@ entries := []logging.LogEntry{
 	// Write the results concurrently to multiple file formats.
 	logging.WriteAllFormats(entries, "enumeration_results")
 ```
+
+Example Setup Cobra Flags:
+```go
+var rootCmd = &cobra.Command{
+	Use:   "goenumer",
+	Short: "A cross-platform enumeration tool for Purple-Teaming",
+	Long: `goenumer is a lightweight tool that mimics some functionallity found in WinPeas/LinPeas.
+
+Flags:
+-eg, --exfilGit: Exfil results of the enumeration to a Git Repo.
+-egP, --gitPort: Specify a port to push to if not HTTP/S based.
+--eh, --exfilHTTP: Exfil to a Web Server.
+--ehP, --httpPort: Specify port for the receiving Web Server.
+--ChariZarD: Runs all nefarious functions on the machine. This is a designed to be extremely noisy.
+-OA, --outputall: Outputs results to CSV, HTML, JSON files.
+-OH, --outputHTML: Outputs results to HTML.
+-OJ, --outputJSON: Outputs results to JSON.
+-OC, --outputCSV: Outputs results to CSV.
+-fn, --filename: Base name for the results file/s.
+`,
+
+
+
+
+
+
+
+
+
+
+	
+	Run: func(cmd *cobra.Command, args []string) {
+		// Call your enumeration functions here based on OS
+	},
+}
+func init (){
+	rootCmd.Flags().BoolP("help", "h", false, "Displays help info")
+	rootCmd.Flags().StringP("exfilGit","eg","", "Exfil results to Git Repo")
+	rootCmd.Flags().StringP("exfilHTTP","eh","","Exfil results to Web Server")
+	rootCmd.Flags().StringP("outputall","OA","","Export to CSV, HTML, JSON")
+	rootCmd.Flags().StringP("outputHTML","OH","","Export to HTML Only")
+	rootCmd.Flags().StringP("outputJSON","OJ","","Export to JSON Only")
+	rootCmd.Flags().StringP("outputCSV","OC","","Export to CSV Only")
+	rootCmd.Flags().StringP("filename","fn","enumerresults"+ time.now(),"Base name for the Output files")
+	rootCmd.Flags().IntP("gitPort","egP",443,"Non Standard port for Git operations. EX:5000")
+	rootCmd.Flags().IntP("httpPort","ehP",80, "Specify Web Server receiving the results. EX: 443 or 8080")
+}
+```
