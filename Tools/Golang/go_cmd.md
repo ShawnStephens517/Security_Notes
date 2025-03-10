@@ -31,3 +31,27 @@ func main() {
     fmt.Println("cmd.exe has exited.")
 }
 ```
+
+Basic Logging Struct for script like execution
+```go
+
+entries := []logging.LogEntry{
+		{Timestamp: time.Now(), CheckName: "Hostname", Message: "Captured", Data: "Host-01"},
+		{Timestamp: time.Now(), CheckName: "Process List", Message: "Found", Data: "proc1, proc2"},
+	}
+
+	// Run OS-specific checks.
+	switch runtime.GOOS {
+	case "windows":
+		fmt.Println("Running Windows Enumeration")
+		oscheck.WinCheck()
+	case "linux":
+		fmt.Println("Running Linux Enumeration")
+		oscheck.LinCheck()
+	default:
+		fmt.Printf("Unsupported OS: %s\n", runtime.GOOS)
+	}
+
+	// Write the results concurrently to multiple file formats.
+	logging.WriteAllFormats(entries, "enumeration_results")
+```
