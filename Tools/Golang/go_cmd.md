@@ -74,18 +74,7 @@ Flags:
 -OJ, --outputJSON: Outputs results to JSON.
 -OC, --outputCSV: Outputs results to CSV.
 -fn, --filename: Base name for the results file/s.
-`,
-
-
-
-
-
-
-
-
-
-
-	
+`,	
 	Run: func(cmd *cobra.Command, args []string) {
 		// Call your enumeration functions here based on OS
 	},
@@ -101,5 +90,27 @@ func init (){
 	rootCmd.Flags().StringP("filename","fn","enumerresults"+ time.now(),"Base name for the Output files")
 	rootCmd.Flags().IntP("gitPort","egP",443,"Non Standard port for Git operations. EX:5000")
 	rootCmd.Flags().IntP("httpPort","ehP",80, "Specify Web Server receiving the results. EX: 443 or 8080")
+}
+```
+
+
+Example Float Sleep Timer. Used for odd random sleep timer for hiding better:
+```go
+package main
+
+import (
+	"fmt"
+	"time"
+)
+//Use fun math equations and the float to sleep. Example: Sqrt of a random prime number.
+func main() {
+	floatSeconds := 1.5
+    
+    // Convert float seconds to nanoseconds (int64)
+	duration := time.Duration(floatSeconds * float64(time.Second))
+
+    fmt.Printf("Sleeping for: %v\n", duration)
+	time.Sleep(duration)
+    fmt.Println("Wake up")
 }
 ```
