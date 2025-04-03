@@ -16,7 +16,13 @@ func main() {
 	// Detect the operating system.
 	osName := runtime.GOOS
 	fmt.Printf("Running on: %s\n", osName)
-
+	/*
+		if osName != string("windows"){
+		log.Fatal("Not running on Windows!:\n", osName)
+	} else {
+		fmt.Printf("Running on: %s\n", osName)
+	}
+	*/
 	// Get the current working directory.
 	dir, err := os.Getwd()
 	if err != nil {
