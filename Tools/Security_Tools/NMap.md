@@ -30,3 +30,26 @@ sudo nmap 10.129.2.28 -F -sU
 ```
 
 UDP can be unreliable since NMAP sends empty datagrams
+
+
+## Firewall and IDS/IPS Evasions Tips
+```bash
+SYN
+sudo nmap 10.129.2.80 -p- -sS -Pn -n --disable-arp-ping --packet-trace
+
+SYN-Filtered
+sudo nmap 10.129.2.80 -p- -sS -n -Pn --disable-arp-ping --packet-trace
+
+Syn Custom Source Port
+sudo nmap 10.129.2.80 -p- -sS -n -Pn --disable-arp-ping --packet-trace --source-port 53
+
+ACK
+sudo nmap 10.129.2.80 -p- -sA -Pn -n --disable-arp-ping --packet-trace
+
+#DecoyScan
+sudo nmap 10.129.2.80 -p- -sS -Pn -n --disable-arp-ping --packet-trace -D RND:5
+
+Different Source
+sudo nmap 10.129.2.80 -p- -n -Pn -O -S <source-ip> -e tun0
+
+```
