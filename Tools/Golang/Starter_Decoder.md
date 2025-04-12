@@ -50,7 +50,7 @@ func main() {
 
 	// The obfuscated URL string (obtained from the challenge coin).
 	// Note: The domain prefix "http://b/" is removed from processing.
-	inputString := `http://b/xcb/xfa/x1b&lt;W/xb2/x8d/xb0/xe0/xb3/xcb1/xa95/x9d/x88/x8f/xa3]/x01,T/xf4/x7f/xabe/xf5/x0c/xa1/x89su+{/x12/x99]/x95/x03/x12/x8e/xfd/xca/x7f/xdaN/x0b/xd2/xf6/xda/xecX/xecM&amp;/x02{/x00/xf9l/xb7/x80:/x87/x0c/xb4&#039;/xb1L/x02/x00/xc9/xa1/xc9V/xbe/x10/xd5/x88R]/xde/xfc/x91kl/xbb/x8a/xf3/xef/xbfN/xfa/xe0/xb6_?!v/x9e/x82/x80i/xe6{/x95zU/xd7/xcd/x08v/x12/x8b/xe7/x86-/x19/x04:/x1a{~l/xa2/xac/xa2`
+	inputString := ``
 
 	// Remove the "http://b/" prefix if present.
 	prefix := "http://b/"
@@ -84,6 +84,24 @@ func main() {
 
 	// Exit cleanly.
 	os.Exit(0)
+}
+
+// removePKCS7Padding checks and removes PKCS#7 padding from a byte slice.
+func removePKCS7Padding(data []byte) ([]byte, error) {
+	if len(data) == 0 {
+		return nil, fmt.Errorf("empty data")
+	}
+	paddingLen := int(data[len(data)-1])
+	if paddingLen == 0 || paddingLen > len(data) {
+		return nil, fmt.Errorf("invalid padding length")
+	}
+	// Check that the last paddingLen bytes are all the same value.
+	for i := len(data) - paddingLen; i < len(data); i++ {
+		if int(data[i]) != paddingLen {
+			return nil, fmt.Errorf("invalid padding")
+		}
+	}
+	return data[:len(data)-paddingLen], nil
 }
 
 ```
