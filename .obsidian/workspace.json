@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pentesting/2) Enumeration/Active Scanning.md",
+                "file": "Pentesting/2) Enumeration/Databases.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Active Scanning"
+              "title": "Databases"
             }
           }
         ]
@@ -169,16 +169,32 @@
       "command-palette:Open command palette": false,
       "markdown-importer:Open format converter": false,
       "publish:Publish changes...": false,
-      "workspaces:Manage workspace layouts": false
+      "workspaces:Manage workspace layouts": false,
+      "obsidian-git:Open Git source control": false
     }
   },
   "active": "7e33dc9bad416069",
   "lastOpenFiles": [
+    "Courses/HTB-Pentesting/FootPrinting.md",
+    "Pentesting/2) Enumeration/Mail Enumeration.md",
+    "Pentesting/2) Enumeration/nfs.md",
+    "Pentesting/2) Enumeration/File_Transfering.md",
+    "Pentesting/2) Enumeration/DNS.md",
+    "Pentesting/2) Enumeration/Databases.md",
+    "Pentesting/2) Enumeration/IPMI.md",
+    "Pentesting/2) Enumeration/SMB.md",
+    "Pentesting/2) Enumeration/SNMP.md",
+    "Courses/HTB-Pentesting/nfs",
+    "Courses/HTB-Pentesting/smb_results.txt",
+    "Pentesting/4) Maintaining Access/Windows/Local Windows Persistence/Modification of Unprivileged Accounts.md",
+    "Courses/HTB-Pentesting/results.txt",
+    "Courses/HTB-Pentesting",
+    "Courses/Pentesting",
+    "Pentesting/2) Enumeration/Active Scanning.md",
     "Pentesting/WorkFlow.md",
     "Templates/Report-Writing/OSCP-exam-report-template_OS_v2.md",
     "Templates/Report-Writing/Engagement.md",
     "img_assets/Pasted image 20240809162924.png",
-    "Pentesting/2) Enumeration/Active Scanning.md",
     "Templates/Report-Writing/OSCP Report.md",
     "Tools/Security_Tools/NMap.md",
     "Tools/Security_Tools/Shells & RevShells.md",
@@ -192,26 +208,12 @@
     "Challenges & CTFs/TryHackme/Daily Bugle.md",
     "Challenges & CTFs/TryHackme/Internal/Report_Draft.md",
     "Challenges & CTFs/TryHackme/Untitled",
-    "Running.md",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request.txt",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request",
     "Challenges & CTFs/TryHackme/Internal/linpeas.sh",
-    "Tools/Linux/Commands Cheat Sheet.md",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/pass_brute.txt",
-    "Tools/Security_Tools/Hydra.md",
-    "Challenges & CTFs/TryHackme/Internal/Artifacts/log_request.txt",
-    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan_e.txt",
-    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan.txt",
-    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan_contents.txt",
-    "Challenges & CTFs/TryHackme/Internal/Artifacts/wpscan_includes.txt",
     "img_assets/Pasted image 20240809175042.png",
     "img_assets/Pasted image 20240809162933.png",
-    "Tools/Golang/Pin-alyzer.md",
-    "Tools/Bash/Ping Sweeper.md",
-    "Challenges & CTFs/TryHackme/Blueprint.md",
-    "Challenges & CTFs/TryHackme/Anthem.md",
-    "Challenges & CTFs/TryHackme/Opacity.md",
-    "Challenges & CTFs/TryHackme/NanoCherry.md",
     "Untitled.canvas",
     "Pasted image 20240809163007.png",
     "Pasted image 20240809163013.png",
