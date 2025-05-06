@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "7e33dc9bad416069",
+            "id": "7c82098155640d29",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pentesting/2) Enumeration/Databases.md",
+                "file": "Pentesting/4) Maintaining Access/File-Transfers/Linux Transfers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Databases"
+              "title": "Linux Transfers"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 227.5
   },
   "right": {
     "id": "a1330f2d86f5edd2",
@@ -173,14 +173,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "7e33dc9bad416069",
+  "active": "7c82098155640d29",
   "lastOpenFiles": [
+    "Pentesting/2) Enumeration/Databases.md",
+    "Pentesting/4) Maintaining Access/File-Transfers/Linux Transfers.md",
+    "Pentesting/4) Maintaining Access/File-Transfers/Misc Transfers.md",
+    "Pentesting/4) Maintaining Access/File-Transfers/Windows Transfers.md",
+    "Pentesting/4) Maintaining Access/File-Transfers",
     "Courses/HTB-Pentesting/FootPrinting.md",
     "Pentesting/2) Enumeration/Mail Enumeration.md",
     "Pentesting/2) Enumeration/nfs.md",
     "Pentesting/2) Enumeration/File_Transfering.md",
     "Pentesting/2) Enumeration/DNS.md",
-    "Pentesting/2) Enumeration/Databases.md",
     "Pentesting/2) Enumeration/IPMI.md",
     "Pentesting/2) Enumeration/SMB.md",
     "Pentesting/2) Enumeration/SNMP.md",
@@ -204,14 +208,10 @@
     "Tools/Golang/interesting_repos.md",
     "Tools/Security_Tools/ffuf - Web Fuzzer.md",
     "Challenges & CTFs/TryHackme/Internal/Running Notes.md",
-    "Challenges & CTFs/TryHackme/Overpass.md",
-    "Challenges & CTFs/TryHackme/Daily Bugle.md",
-    "Challenges & CTFs/TryHackme/Internal/Report_Draft.md",
     "Challenges & CTFs/TryHackme/Untitled",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request.txt",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request",
     "Challenges & CTFs/TryHackme/Internal/linpeas.sh",
-    "Challenges & CTFs/TryHackme/Internal/Artifacts/pass_brute.txt",
     "img_assets/Pasted image 20240809175042.png",
     "img_assets/Pasted image 20240809162933.png",
     "Untitled.canvas",
