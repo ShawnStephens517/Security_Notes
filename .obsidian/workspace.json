@@ -13,15 +13,58 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Pentesting/1)Recon/Osint.md",
+                "file": "Pentesting/Active-Directory/Registry Helper.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Osint"
+              "title": "Registry Helper"
+            }
+          },
+          {
+            "id": "f7ba31ba0c9e9f9a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Security_Tools/CrackMapExec_NetExec.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CrackMapExec_NetExec"
+            }
+          },
+          {
+            "id": "6f479f2bd1ef0b77",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/PowerShell/General_Help.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "General_Help"
+            }
+          },
+          {
+            "id": "72e82fbe4d8f7053",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Tools/Security_Tools/Impacket.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Impacket"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -53,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gobuster",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -173,45 +216,45 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e41e59ddb9ec1bf6",
+  "active": "6f479f2bd1ef0b77",
   "lastOpenFiles": [
+    "Tools/Security_Tools/Password_Cracking.md",
+    "Tools/Security_Tools/CrackMapExec_NetExec.md",
+    "Pentesting/Active-Directory/Registry Helper.md",
+    "Tools/Security_Tools/Impacket.md",
+    "Tools/Security_Tools/Hydra.md",
+    "Pentesting/Password Attacks.md",
+    "Tools/Security_Tools/MetaSploit.md",
+    "Tools/Security_Tools/Evil-Winrm.md",
+    "Tools/Linux/RDP.md",
+    "Tools/Linux/Priv_esc_cheatcodes.md",
+    "Pentesting/5) Covering_CleaningUP",
+    "Tools/Security_Tools/Shells & RevShells.md",
+    "Pentesting/2) Enumeration/File_Transfering.md",
+    "Pentesting/2) Enumeration/Web Basics.md",
+    "Pentesting/2) Enumeration/Basics.md",
+    "Pentesting/1)Recon/Osint.md",
     "Pentesting/4) Maintaining Access/File-Transfers/Windows Transfers.md",
     "Pentesting/4) Maintaining Access/File-Transfers/Misc Transfers.md",
     "Pentesting/4) Maintaining Access/File-Transfers/Linux Transfers.md",
     "Pentesting/4) Maintaining Access/File-Transfers",
-    "Pentesting/2) Enumeration/Web Basics.md",
     "2025-04-27.md",
-    "Pentesting/1)Recon/Osint.md",
     "Tools/Security_Tools/Nikto.md",
     "Pentesting/2) Enumeration/Certificates.md",
     "Tools/Security_Tools/Gobuster.md",
     "Challenges & CTFs/TryHackme/Daily Bugle.md",
     "Tools/Security_Tools/ffuf - Web Fuzzer.md",
     "Pentesting/2) Enumeration/DNS.md",
-    "Pentesting/2) Enumeration/File_Transfering.md",
     "Pentesting/2) Enumeration/Databases.md",
-    "Pentesting/2) Enumeration/Basics.md",
-    "Pentesting/2) Enumeration/Active Scanning.md",
-    "Courses/HTB-Pentesting/FootPrinting.md",
-    "Pentesting/2) Enumeration/Mail Enumeration.md",
-    "Pentesting/2) Enumeration/nfs.md",
-    "Pentesting/2) Enumeration/IPMI.md",
-    "Pentesting/2) Enumeration/SMB.md",
-    "Pentesting/2) Enumeration/SNMP.md",
     "Courses/HTB-Pentesting/nfs",
     "Courses/HTB-Pentesting/smb_results.txt",
-    "Pentesting/4) Maintaining Access/Windows/Local Windows Persistence/Modification of Unprivileged Accounts.md",
     "Courses/HTB-Pentesting/results.txt",
     "Courses/HTB-Pentesting",
     "Courses/Pentesting",
-    "Pentesting/WorkFlow.md",
-    "Templates/Report-Writing/OSCP-exam-report-template_OS_v2.md",
-    "Templates/Report-Writing/Engagement.md",
     "img_assets/Pasted image 20240809162924.png",
     "Challenges & CTFs/TryHackme/Untitled",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request.txt",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request",
-    "Challenges & CTFs/TryHackme/Internal/linpeas.sh",
     "img_assets/Pasted image 20240809175042.png",
     "img_assets/Pasted image 20240809162933.png",
     "Untitled.canvas",

