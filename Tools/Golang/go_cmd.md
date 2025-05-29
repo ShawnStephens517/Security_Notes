@@ -114,3 +114,110 @@ func main() {
     fmt.Println("Wake up")
 }
 ```
+ ```go
+
+
+// +build windows
+
+package main
+
+import (
+	"fmt"
+	"os"
+	"path/filepath"
+	"strings"
+	"sync"
+
+	"golang.org/x/sys/windows"
+)
+
+const maxWorkers = 5
+
+var targets = []string{"S-1-1-0", "S-1-5-32-545"} // Everyone, Users
+
+func hasWriteAccess(path string) (bool, error) {
+	p, err := windows.UTF16PtrFromString(path)
+	if err != nil {
+		return false, err
+	}
+
+	var sd *windows.SECURITY_DESCRIPTOR
+	err = windows.GetNamedSecurityInfo(
+		p,
+		windows.SE_FILE_OBJECT,
+		windows.DACL_SECURITY_INFORMATION,
+		nil,
+		nil,
+		nil,
+		nil,
+		&sd,
+	)
+	if err != nil {
+		return false, nil // don't fail on access denied
+	}
+
+	dacl, present, err := sd.DACL()
+	if err != nil || !present {
+		return false, err
+	}
+
+	for _, ace := range dacl.AllAccessAces() {
+		sid := ace.SID.String()
+		for _, targetSID := range targets {
+			if sid == targetSID {
+				mask := ace.Mask
+				if mask&windows.FILE_GENERIC_WRITE != 0 || mask&windows.GENERIC_ALL != 0 {
+					return true, nil
+				}
+			}
+		}
+	}
+	return false, nil
+}
+
+func scanPath(path string, wg *sync.WaitGroup, sem chan struct{}) {
+	defer wg.Done()
+	defer func() { <-sem }()
+
+	ok, err := hasWriteAccess(path)
+	if err != nil {
+		return
+	}
+	if ok {
+		fmt.Println("[!] Writable by Users or Everyone:", path)
+	}
+}
+
+func main() {
+	start := "C:\\Windows\\System32"
+	sem := make(chan struct{}, maxWorkers)
+	var wg sync.WaitGroup
+
+	_ = filepath.Walk(start, func(path string, info os.FileInfo, err error) error {
+		if err != nil || !info.IsDir() {
+			return nil
+		}
+
+		// Avoid junctions and reparse points to reduce recursion into symlinked paths
+		if strings.Contains(info.Name(), "->") {
+			return filepath.SkipDir
+		}
+
+		sem <- struct{}{}
+		wg.Add(1)
+		go scanPath(path, &wg, sem)
+
+		return nil
+	})
+
+	wg.Wait()
+	fmt.Println("Scan complete.")
+}
+```
+
+
+
+
+
+
+
