@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/PowerShell/General_Help.md",
+                "file": "Pentesting/Active-Directory/Attack SAM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "General_Help"
+              "title": "Attack SAM"
             }
           },
           {
@@ -55,16 +55,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Tools/Security_Tools/Impacket.md",
+                "file": "Pentesting/1)Recon/Osint.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Impacket"
+              "title": "Osint"
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -96,7 +96,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "lsass",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -126,78 +126,7 @@
   "right": {
     "id": "a1330f2d86f5edd2",
     "type": "split",
-    "children": [
-      {
-        "id": "4ebb9002dd6d2c84",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "ae6a0f661e42159f",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Tools/Golang/MoTWbypass.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for MoTWbypass"
-            }
-          },
-          {
-            "id": "33a32e3da67e7ae9",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Tools/Golang/MoTWbypass.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links from MoTWbypass"
-            }
-          },
-          {
-            "id": "a9cf1dab136b65af",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "ee7a3f96073a3ebb",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "Tools/Golang/MoTWbypass.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of MoTWbypass"
-            }
-          }
-        ],
-        "currentTab": 2
-      }
-    ],
+    "children": [],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
@@ -216,42 +145,42 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "6f479f2bd1ef0b77",
+  "active": "72e82fbe4d8f7053",
   "lastOpenFiles": [
-    "Tools/Security_Tools/Password_Cracking.md",
-    "Tools/Security_Tools/CrackMapExec_NetExec.md",
-    "Pentesting/Active-Directory/Registry Helper.md",
-    "Tools/Security_Tools/Impacket.md",
+    "Challenges & CTFs/TryHackme/NanoCherry.md",
+    "Challenges & CTFs/TryHackme/Overpass.md",
     "Tools/Security_Tools/Hydra.md",
+    "Tools/Security_Tools/Impacket.md",
+    "Pentesting/Active-Directory/Attack SAM.md",
+    "Pentesting/Active-Directory/Attack LSASS.md",
     "Pentesting/Password Attacks.md",
+    "Pentesting/Active-Directory/Attacking AD & NTDS.dit.md",
+    "Pentesting/Active-Directory/Windows Credential Hunting.md",
+    "Pentesting/4) Maintaining Access/File-Transfers/Windows Transfers.md",
+    "Pentesting/1)Recon/Osint.md",
+    "img_assets/Pasted image 20240809162924.png",
+    "Pentesting/4) Maintaining Access/Windows/Lateral Movement/Alternate Authentication Material.md",
+    "Tools/Security_Tools/CrackMapExec_NetExec.md",
+    "Pentesting/Active-Directory/post-enumeration.md",
+    "Pentesting/Active-Directory/post-attacks.md",
+    "Tools/Golang/Dir-Permission Search.md",
+    "Tools/Golang/go_cmd.md",
+    "Tools/PowerShell/General_Help.md",
+    "Tools/Security_Tools/Password_Cracking.md",
     "Tools/Security_Tools/MetaSploit.md",
     "Tools/Security_Tools/Evil-Winrm.md",
     "Tools/Linux/RDP.md",
     "Tools/Linux/Priv_esc_cheatcodes.md",
-    "Pentesting/5) Covering_CleaningUP",
+    "Pentesting/5) Covering_CleaningUp",
     "Tools/Security_Tools/Shells & RevShells.md",
     "Pentesting/2) Enumeration/File_Transfering.md",
     "Pentesting/2) Enumeration/Web Basics.md",
-    "Pentesting/2) Enumeration/Basics.md",
-    "Pentesting/1)Recon/Osint.md",
-    "Pentesting/4) Maintaining Access/File-Transfers/Windows Transfers.md",
-    "Pentesting/4) Maintaining Access/File-Transfers/Misc Transfers.md",
-    "Pentesting/4) Maintaining Access/File-Transfers/Linux Transfers.md",
     "Pentesting/4) Maintaining Access/File-Transfers",
-    "2025-04-27.md",
-    "Tools/Security_Tools/Nikto.md",
-    "Pentesting/2) Enumeration/Certificates.md",
-    "Tools/Security_Tools/Gobuster.md",
-    "Challenges & CTFs/TryHackme/Daily Bugle.md",
-    "Tools/Security_Tools/ffuf - Web Fuzzer.md",
-    "Pentesting/2) Enumeration/DNS.md",
-    "Pentesting/2) Enumeration/Databases.md",
     "Courses/HTB-Pentesting/nfs",
     "Courses/HTB-Pentesting/smb_results.txt",
     "Courses/HTB-Pentesting/results.txt",
     "Courses/HTB-Pentesting",
     "Courses/Pentesting",
-    "img_assets/Pasted image 20240809162924.png",
     "Challenges & CTFs/TryHackme/Untitled",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request.txt",
     "Challenges & CTFs/TryHackme/Internal/Artifacts/jenkins_request",

@@ -114,14 +114,96 @@ func main() {
     fmt.Println("Wake up")
 }
 ```
- ```go
 
+ ```go
 
 // +build windows
 
 package main
 
-import (
+import (```go
+	},
+}
+​￼func init (){
+	rootCmd.Flags().BoolP("help", "h", false, "Displays help info")
+	rootCmd.Flags().StringP("exfilGit","eg","", "Exfil results to Git Repo")
+	rootCmd.Flags().StringP("exfilHTTP","eh","","Exfil results to Web Server")
+	rootCmd.Flags().StringP("outputall","OA","","Export to CSV, HTML, JSON")
+	rootCmd.Flags().StringP("outputHTML","OH","","Export to HTML Only")
+	rootCmd.Flags().StringP("outputJSON","OJ","","Export to JSON Only")
+	rootCmd.Flags().StringP("outputCSV","OC","","Export to CSV Only")
+	rootCmd.Flags().StringP("filename","fn","enumerresults"+ time.now(),"Base name for the Output files")
+	rootCmd.Flags().IntP("gitPort","egP",443,"Non Standard port for Git operations. EX:5000")
+	rootCmd.Flags().IntP("httpPort","ehP",80, "Specify Web Server receiving the results. EX: 443 or 8080")
+}
+```
+
+
+Example Float Sleep Timer. Used for odd random sleep timer for hiding better:
+```go
+package main
+
+​￼import (
+	"fmt"
+	"time"
+)
+//Use fun math equations and the float to sleep. Example: Sqrt of a random prime number.
+​￼func main() {
+	floatSeconds := 1.5
+    
+    // Convert float seconds to nanoseconds (int64)
+	duration := time.Duration(floatSeconds * float64(time.Second))
+
+    fmt.Printf("Sleeping for: %v\n", duration)
+	time.Sleep(duration)
+    fmt.Println("Wake up")
+}
+​￼```
+
+ ```go
+
+// +build windows
+
+package main
+
+​￼import (
+	"fmt"
+	"os"
+	"path/filepath"
+	"strings"
+	"sync"
+
+	"golang.org/x/sys/windows"
+)
+
+const maxWorkers = 5
+
+var targets = []string{"S-1-1-0", "S-1-5-32-545"} // Everyone, Users
+
+​￼func hasWriteAccess(path string) (bool, error) {
+	p, err := windows.UTF16PtrFromString(path)
+	​￼if err != nil {
+		return false, err
+	}
+
+	var sd *windows.SECURITY_DESCRIPTOR
+	​￼err = windows.GetNamedSecurityInfo(
+		p,
+		windows.SE_FILE_OBJECT,
+		windows.DACL_SECURITY_INFORMATION,
+		nil,
+		nil,
+		nil,
+		nil,
+		&sd,
+	)
+	​￼if err != nil {
+		return false, nil // don't fail on access denied
+	}
+
+	dacl, present, err := sd.DACL()
+	​￼if err != nil || !present {
+
 	"fmt"
 	"os"
 	"path/filepath"

