@@ -35,6 +35,8 @@ cat file.txt | grep "Item" | cut -d " " -f {item} | tr -d ":"
 find . -name "*string*" -print
 
 find . -maxdepth 1 -name "*string*" -print`find . -maxdepth 1 -name "*string*" -print
+
+locate <file_to_be_searchedfor
 ```
 
 #### Count results

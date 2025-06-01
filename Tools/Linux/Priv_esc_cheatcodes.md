@@ -1,3 +1,4 @@
+[[Sudo - Shell Escapes]]
 #### LD_PRELOAD
 **env_keep+=LD_PRELOAD**
 [Hack-Tricks](https://book.hacktricks.xyz/linux-hardening/privilege-escalation)
