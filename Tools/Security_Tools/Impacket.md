@@ -1,6 +1,6 @@
 #### AD Attack
-[[Password Attacks]] [[Password_Cracking]] #ActiveDirectory #Impacket 
-[[Attack LSASS]] [[Attacking AD & NTDS.dit]] [[Attack SAM]]
+[[Password-Attacks]] [[Password_Cracking]] #ActiveDirectory #Impacket 
+[[Attack-LSASS]] [[Attacking-AD_NTDS]] [[Attack-SAM]]
 
 Creating a Share with smbserver.py
 

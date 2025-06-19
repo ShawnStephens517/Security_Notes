@@ -55,7 +55,7 @@ sudo nmap 10.129.2.80 -p- -n -Pn -O -S <source-ip> -e tun0
 
 
 ### Advanced Scan Options
-[[Basics]] [[Active Scanning]]
+[[Basics]] [[Active_Scanning]]
 
 | Null Scan | No Flags Set | Expect RST if true Closed                |
 | --------- | ------------ | ---------------------------------------- |

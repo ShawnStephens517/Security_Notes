@@ -5,16 +5,16 @@
 Walkthroughs and note-taking for different platform challenges:
 
 - TryHackMe
-  - [Internal Room Report](Challenges%20&%20CTFs/TryHackme/Internal/Report_Draft.md)
-  - [TJnull List](Challenges%20&%20CTFs/TJnull%20List.md)
+  - [Listing](Challenges-&-CTFs/TryHackme/README.md)
+  - [TJnull List](Challenges-&-CTFs/TJnull-List.md)
 - HackTheBox
 
 ## Courses
 
 Notes and resources for cybersecurity courses:
 
-- AI-RedTeaming
-- HTB-Pentesting
+- [AI-RedTeaming](Courses/AI-RedTeaming/Fundamentals-of-AI.md)
+- [HTB-Pentesting](Courses/HTB-Pentesting/FootPrinting.md)(Notes for machines in lessons) - Look at [Pentesting](Pentesting/README.md) for additional technical information
 
 ## OSCP
 
@@ -41,32 +41,32 @@ Professional notes for conducting penetration testing engagements:
 Detailed notes on penetration testing methodologies:
 
 - Enumeration
-  - [Basics](Pentesting/2)%20Enumeration/Basics.md)
-  - [Certificates](Pentesting/2)%20Enumeration/Certificates.md)
+  - [Basics](Pentesting/2-Enumeration/Basics.md)
+  - [Certificates](Pentesting/2-Enumeration/Certificates.md)
 - Exploitation
-  - Web Attacks (e.g., [XXE](Pentesting/3)%20Exploitation/Web/XML%20External%20Entities(XXE)/In-Band%20XXE.md))
+  - [Web Attacks](Pentesting/3-Exploitation/README.md)
 - Maintaining Access
   - Privilege Escalation
-    - [Linux](Pentesting/4)%20Maintaining%20Access/Privilege%20Escalation/Linux)
-    - [Windows](Pentesting/4)%20Maintaining%20Access/Privilege%20Escalation/Windows)
-  - [File Transfers](Pentesting/4)%20Maintaining%20Access/File-Transfers)
+    - [Linux](Pentesting/4-Maintaining-Access/Privilege-Escalation/README.md)
+    - [Windows](Pentesting/4-Maintaining-Access/Privilege-Escalation/README.md)
+  - [File Transfers](Pentesting/4-Maintaining-Access/File-Transfers/README.md)
 - Covering Tracks
-  - [Cleaning Up](Pentesting/5)%20Covering_CleaningUp)
+  - [Cleaning Up](Pentesting/5%20Covering%20Tracks/Cleaning_Up.md)
 
 ## Tools
 
 Comprehensive notes on security tools:
 
 - Security Tooling
-  - [Burp Suite](Tools/Security_Tools/Burp%20Suite.md)
+  - [Burp Suite](Tools/Security_Tools/Burp-Suite.md)
   - [NMap](Tools/Security_Tools/NMap.md)
   - [Password Cracking](Tools/Security_Tools/Password_Cracking.md)
   - [CrackMapExec](Tools/Security_Tools/CrackMapExec_NetExec.md)
   - [MetaSploit](Tools/Security_Tools/MetaSploit.md)
-  - [Shells & RevShells](Tools/Security_Tools/Shells%20&%20RevShells.md)
+  - [Shells & RevShells](Tools/Security_Tools/Shells-&-RevShells.md)
 - Linux Applications and Setup
   - [Priv Esc Cheat Codes](Tools/Linux/Priv_esc_cheatcodes.md)
-  - [Commands Cheat Sheet](Tools/Linux/Commands%20Cheat%20Sheet.md)
+  - [Commands Cheat Sheet](Tools/Linux/Commands-Cheat_Sheet.md)
 - Windows Applications and Setup
 - Mac Applications and Setup
 - Custom Tooling and Scripts

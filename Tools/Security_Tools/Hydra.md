@@ -1,5 +1,5 @@
 #### RDP-Bruteforce
-#Tool [[Password Attacks]]
+#Tool [[Password-Attacks]]
 ```shell
 TheCyberScythe@htb[/htb]$ hydra -L user.list -P password.list rdp://10.129.42.197
 ```
