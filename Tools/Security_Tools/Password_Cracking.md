@@ -117,25 +117,43 @@ cry0l1t3@htb:~$ john server_doc.hash
 cry0l1t3@htb:~$ john --wordlist=<wordlist.txt> server_doc.hash 
 ```
 
-|**Tool**|**Description**|
-|---|---|
-|`pdf2john`|Converts PDF documents for John|
-|`ssh2john`|Converts SSH private keys for John|
-|`mscash2john`|Converts MS Cash hashes for John|
-|`keychain2john`|Converts OS X keychain files for John|
-|`rar2john`|Converts RAR archives for John|
-|`pfx2john`|Converts PKCS#12 files for John|
-|`truecrypt_volume2john`|Converts TrueCrypt volumes for John|
-|`keepass2john`|Converts KeePass databases for John|
-|`vncpcap2john`|Converts VNC PCAP files for John|
-|`putty2john`|Converts PuTTY private keys for John|
-|`zip2john`|Converts ZIP archives for John|
-|`hccap2john`|Converts WPA/WPA2 handshake captures for John|
-|`office2john`|Converts MS Office documents for John|
-|`wpa2john`|Converts WPA/WPA2 handshakes for John|
+| **Tool**                | **Description**                                                  |
+| ----------------------- | ---------------------------------------------------------------- |
+| `pdf2john`              | Converts PDF documents for John                                  |
+| `ssh2john`              | Converts SSH private keys for John                               |
+| `mscash2john`           | Converts MS Cash hashes for John                                 |
+| `keychain2john`         | Converts OS X keychain files for John                            |
+| `rar2john`              | Converts RAR archives for John                                   |
+| `pfx2john`              | Converts PKCS#12 files for John                                  |
+| `truecrypt_volume2john` | Converts TrueCrypt volumes for John                              |
+| `keepass2john`          | Converts KeePass databases for John                              |
+| `vncpcap2john`          | Converts VNC PCAP files for John                                 |
+| `putty2john`            | Converts PuTTY private keys for John                             |
+| `zip2john`              | Converts ZIP archives for John                                   |
+| `hccap2john`            | Converts WPA/WPA2 handshake captures for John                    |
+| `office2john`           | Converts MS Office documents for John                            |
+| `wpa2john`              | Converts WPA/WPA2 handshakes for John                            |
+| bitlocker2john          | Coverts Bitlocker encrypted drives to 4 hashes (Pass & Recovery) |
 **Find Where the Scripts Are**
 ```python
 TheCyberScythe@htb[/htb]$ locate *2john*
+```
+
+
+*Example*s
+```python
+office2john Confidential.xlsx > excel_crack.hash
+john --wordlist=/usr/share/wordlists/fasttrack.txt excel_crack.hash
+```
+
+```python
+bitlocker2john -i Private.vhd > private.hashes
+┌──(sstephens㉿kali-arm)-[~/…/Security_Notes/Courses/HTB-Pentesting/password_cracking]
+└─$ grep "bitlocker\$0" private.hashes > private.hash
+                                                                                                                    
+┌──(sstephens㉿kali-arm)-[~/…/Security_Notes/Courses/HTB-Pentesting/password_cracking]
+└─$ cat private.hash
+$bitlocker$0$16$b3c105c7ab7faaf544e84d712810da65$1048576$12$b020fe18bbb1db0103000000$60$e9c6b548788aeff190e517b0d85ada5daad7a0a3f40c4467307011ac17f79f8c99768419903025fd7072ee78b15a729afcf54b8c2e3af05bb18d4ba0
 ```
 
 #Essentials #Helpful #Bruteforce #Tool #JtR #John
@@ -145,8 +163,7 @@ TheCyberScythe@htb[/htb]$ locate *2john*
 - `hashcat -m 5600 crack.txt /usr/share/wordlists/fasttrack.txt1`
 - `hashcat -m 5600 crack.txt /usr/share/wordlists/fasttrack.txt --show`
 - `hashcat -m 5600 crack.txt /usr/share/wordlists/fasttrack.txt -r OneRuletoRulethemAll`
-
-
+[[HashCat Modes]]
 **Custom Rules**
 
 | **Function** | **Description**                                   |
@@ -301,6 +318,12 @@ Stopped: Tue Dec 14 14:16:58 2021
 ```
 
 
+```python
+$ hashcat -a 0 -m 0 e3e3ec5831ad5e7288241960e5d4fdb8 /usr/share/wordlists/rockyou.txt
+```
+
+```
+
 #Essentials #Helpful #Bruteforce #Tool #HC #HashCat
 
 ---
@@ -393,3 +416,67 @@ Here we see that secretsdump successfully dumps the local SAM hashes and would'v
 This tells us how to read the output and what hashes we can crack. Most modern Windows operating systems store the password as an NT hash. Operating systems older than Windows Vista & Windows Server 2008 store passwords as an LM hash, so we may only benefit from cracking those if our target is an older Windows OS.
 
 Knowing this, we can copy the NT hashes associated with each user account into a text file and start cracking passwords. It may be beneficial to make a note of each user, so we know which password is associated with which user account.
+
+#### Mask attack
+
+[Mask attack](https://hashcat.net/wiki/doku.php?id=mask_attack) (`-a 3`) is a type of brute-force attack in which the keyspace is explicitly defined by the user. For example, if we know that a password is eight characters long, rather than attempting every possible combination, we might define a mask that tests combinations of six letters followed by two numbers.
+
+A mask is defined by combining a sequence of symbols, each representing a built-in or custom character set. Hashcat includes several built-in character sets:
+
+| Symbol | Charset                             |
+| ------ | ----------------------------------- |
+| ?l     | abcdefghijklmnopqrstuvwxyz          |
+| ?u     | ABCDEFGHIJKLMNOPQRSTUVWXYZ          |
+| ?d     | 0123456789                          |
+| ?h     | 0123456789abcdef                    |
+| ?H     | 0123456789ABCDEF                    |
+| ?s     | «space»!"#$%&'()*+,-./:;<=>?@[]^_`{ |
+| ?a     | ?l?u?d?s                            |
+| ?b     | 0x00 - 0xff                         |
+
+## Cracking BitLocker-encrypted drives
+
+[BitLocker](https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) is a full-disk encryption feature developed by Microsoft for the Windows operating system. uses the `AES` encryption algorithm with either 128-bit or 256-bit key lengths. If the password or PIN used for BitLocker is forgotten, decryption can still be performed using a recovery key—a 48-digit string generated during the setup process.
+
+In enterprise environments, virtual drives are sometimes used to store personal information, documents, or notes on company-issued devices to prevent unauthorized access. To crack a BitLocker encrypted drive, we can use a script called `bitlocker2john` to [four different hashes](https://openwall.info/wiki/john/OpenCL-BitLocker): the first two correspond to the BitLocker password, while the latter two represent the recovery key. Because the recovery key is very long and randomly generated, it is generally not practical to guess—unless partial knowledge is available. 
+
+```shell
+TheCyberScythe@htb[/htb]$ bitlocker2john -i Backup.vhd > backup.hashes
+TheCyberScythe@htb[/htb]$ grep "bitlocker\$0" backup.hashes > backup.hash
+TheCyberScythe@htb[/htb]$ cat backup.hash
+
+$bitlocker$0$16$02b329c0453b9273f2fc1b927443b5fe$1048576$12$00b0a67f961dd80103000000$60$d59f37e70696f7eab6b8f95ae93bd53f3f7067d5e33c0394b3d8e2d1fdb885cb86c1b978f6cc12ed26de0889cd2196b0510bbcd2a8c89187ba8ec54f
+```
+
+Once a hash is generated, either `JtR` or `hashcat` can be used to crack it. For this example, we will look at the procedure with `hashcat`. The hashcat mode associated with the `$bitlocker$0$...` hash is `-m 22100`. We supply the hash, specify the wordlist, and define the hash mode. Since this encryption uses strong AES encryption, cracking may take considerable time depending on hardware performance.
+
+```python
+hashcat -a 0 -m 22100 '$bitlocker$0$16$b3c105c7ab7faaf544e84d712810da65$1048576$12$b020fe18bbb1db0103000000$60$e9c6b548788aeff190e517b0d85ada5daad7a0a3f40c4467307011ac17f79f8c99768419903025fd7072ee78b15a729afcf54b8c2e3af05bb18d4ba0' /usr/share/wordlists/rockyou.txt
+
+```
+
+#### Mounting BitLocker-encrypted drives in Linux (or macOS)
+
+It is also possible to mount BitLocker-encrypted drives in Linux (or macOS). To do this, we can use a tool called [dislocker](https://github.com/Aorimn/dislocker). First, we need to install the package using `apt`:
+
+
+```shell
+TheCyberScythe@htb[/htb]$ sudo apt-get install dislocker
+```
+
+Next, we create two folders which we will use to mount the VHD.
+
+```shell
+TheCyberScythe@htb[/htb]$ sudo mkdir -p /media/bitlocker
+TheCyberScythe@htb[/htb]$ sudo mkdir -p /media/bitlockermount
+```
+
+We then use `losetup` to configure the VHD as [loop device](https://en.wikipedia.org/wiki/Loop_device), decrypt the drive using `dislocker`, and finally mount the decrypted volume:
+
+```shell
+TheCyberScythe@htb[/htb]$ sudo losetup -f -P Backup.vhd
+TheCyberScythe@htb[/htb]$ sudo dislocker /dev/loop0p2 -u1234qwer -- /media/bitlocker
+TheCyberScythe@htb[/htb]$ sudo mount -o loop /media/bitlocker/dislocker-file /media/bitlockerm
+```
+
+*Or if losetup is ran, from the files gui*
